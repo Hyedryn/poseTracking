@@ -1,0 +1,9 @@
+psychopy/data
+psychopy/BIDS_dataset
+.idea
+*.pyc
+*.pyo
+*.pyd
+psychopy/psychopy_lastrun.py
+psychopy.zip
+*.mp4

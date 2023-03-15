@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.2.4">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant': '', 'session': '001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="fileList" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1536, 864]" valType="code" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[0,0,0]" valType="str" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="psychopyFrequency" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <CodeComponent name="code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="import os&amp;#10;BIDS_path = os.path.join(_thisDir,&quot;BIDS_dataset&quot;)&amp;#10;from pathlib import Path&amp;#10;exp_path = os.path.join(BIDS_path,&quot;sub-&quot;+expInfo[&quot;participant&quot;],&quot;ses-&quot;+expInfo[&quot;session&quot;])&amp;#10;Path(exp_path).mkdir(parents=True, exist_ok=True)&amp;#10;logFileExp = logging.LogFile(os.path.join(exp_path,&quot;sub-&quot;+expInfo[&quot;participant&quot;] + &quot;_ses-&quot;+expInfo[&quot;session&quot;] +'_EXPERIMENTLevel.log'), level=logging.EXP)&amp;#10;logFileWarn = logging.LogFile(os.path.join(exp_path,&quot;sub-&quot;+expInfo[&quot;participant&quot;] + &quot;_ses-&quot;+expInfo[&quot;session&quot;] +'_WARNINGLevel.log'), level=logging.WARNING)&amp;#10;&amp;#10;mouvList = []&amp;#10;&amp;#10;repCount = {'allo':0,'help':0,'dribble':0,'lift':0,'controle':0}" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="Nb = int(random()*5)&amp;#10;films = ['allo','help','dribble','lift','controle']&amp;#10;corrAns = films[Nb]&amp;#10;file = mouvements + '.mp4'" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="#Nb = int(random()*5)&amp;#10;#films = ['allo','help','dribble','lift','controle']&amp;#10;mouvements = thisTrial[&quot;mouvements&quot;]&amp;#10;file = 'films' + '/' + mouvements + '.mp4'&amp;#10;&amp;#10;repCount[thisTrial[&quot;mouvements&quot;]] = repCount[thisTrial[&quot;mouvements&quot;]] + 1&amp;#10;&amp;#10;print(&quot;Current Trial: &quot;,thisTrial[&quot;mouvements&quot;])" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="keys = event.getKeys()&amp;#10;&amp;#10;if 'p' in keys:&amp;#10;    for thisComponent in trialComponents:&amp;#10;        if hasattr(thisComponent, &quot;setAutoDraw&quot;):&amp;#10;            thisComponent.setAutoDraw(False)&amp;#10;    win.flip()&amp;#10;    event.waitKeys()&amp;#10;    for thisComponent in trialComponents:&amp;#10;        if hasattr(thisComponent, &quot;setAutoDraw&quot;):&amp;#10;            thisComponent.setAutoDraw(True)" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="&amp;#10;# Save metadata into subject &amp; session specific JSON&amp;#10;subject_sess_metadata = {&amp;#10;'subject':expInfo[&quot;participant&quot;],&amp;#10;'session':expInfo[&quot;session&quot;],&amp;#10;'sessionMouvementChronology': mouvList,&amp;#10;'sessinMouvementFrequency': repCount,&amp;#10;'startDatetime': expInfo['date'],&amp;#10;'endDatetime': data.getDateStr(),&amp;#10;'expName': expName,&amp;#10;'psychopyVersion': psychopyVersion,&amp;#10;}&amp;#10;&amp;#10;import json&amp;#10;&amp;#10;with open(os.path.join(exp_path,&quot;sub-&quot;+expInfo[&quot;participant&quot;] + &quot;_ses-&quot;+expInfo[&quot;session&quot;] + '_metadata.json'), 'w') as fp:&amp;#10;    json.dump(subject_sess_metadata, fp)" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="# Save cam recording&amp;#10;if cam.status == STARTED:&amp;#10;    cam.stop()&amp;#10;cam_path = os.path.join(exp_path,&quot;camera&quot;)&amp;#10;cam_file = &quot;sub-&quot;+expInfo[&quot;participant&quot;] + &quot;_ses-&quot;+expInfo[&quot;session&quot;] + &quot;_task-&quot; + mouvements + &quot;_rep-&quot; + str(repCount[thisTrial[&quot;mouvements&quot;]]) + &quot;_camera.mp4&quot;&amp;#10;Path(cam_path).mkdir(parents=True, exist_ok=True)&amp;#10;camFilename = os.path.join(cam_path, cam_file)&amp;#10;cam.save(camFilename)&amp;#10;thisExp.currentLoop.addData('cam.clip', camFilename)&amp;#10;&amp;#10;# Other metadata&amp;#10;mouvList.append(mouvements)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MovieComponent name="movie">
+        <Param val="True" valType="bool" updates="None" name="No audio"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="ffpyplayer" valType="str" updates="None" name="backend"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="False" valType="bool" updates="None" name="loop"/>
+        <Param val="$file" valType="str" updates="set every repeat" name="movie"/>
+        <Param val="movie" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="10" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="30" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="1" valType="num" updates="None" name="volume"/>
+      </MovieComponent>
+      <SoundComponent name="sound_2">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="sound_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="D" valType="str" updates="constant" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="10" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="0.5" valType="code" updates="constant" name="volume"/>
+      </SoundComponent>
+      <KeyboardComponent name="key_resp">
+        <Param val="'y','n','left','right'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <SoundComponent name="sound_1">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="sound_1" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="A" valType="str" updates="constant" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="30.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.25" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="code" updates="constant" name="volume"/>
+      </SoundComponent>
+      <CameraComponent name="cam">
+        <Param val="default" valType="str" updates="None" name="device"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="default" valType="str" updates="None" name="mic"/>
+        <Param val="cam" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveFile"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="10" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="30" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+      </CameraComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('mouvements', 'allo')]), OrderedDict([('mouvements', 'help')]), OrderedDict([('mouvements', 'dribble')]), OrderedDict([('mouvements', 'lift')]), OrderedDict([('mouvements', 'controle')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="cond.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="20" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+  </Flow>
+</PsychoPy2experiment>
