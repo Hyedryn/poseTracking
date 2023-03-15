@@ -49,8 +49,8 @@ def play_Trial_Video(trial, name):
         ret, frame = cap.read()
         if ret == True:
             # Display the resulting frame
-            #cv2.imshow(name, frame)
-            cv2.imshow(name, cv2.resize(frame, scaled_res))
+            cv2.imshow(name, frame)
+            #cv2.imshow(name, cv2.resize(frame, scaled_res))
             cv2.setWindowProperty(name, cv2.WND_PROP_TOPMOST, 1)
 
             # Press Q on keyboard to exit
